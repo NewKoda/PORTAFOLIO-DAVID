@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio_David</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Barra de progreso de lectura -->
+    <div id="progreso-lectura"></div>
+    
+    <!-- Botón toggle tema -->
+    <button class="toggle-tema" title="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">DAVID</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA DE MI</a></li>
+                    <li><a href="#serviciosindividuales" onclick="seleccionar()">SERVICIOS</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">TRABAJOS</a></li>
+                </ul>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Imagenes/Perfil.jpeg" alt="Perfil de Andrés David">
+            </div>
+            <h1>ANDRÉS DAVID CÁRDENAS CASTRO</h1>
+            <h2>INGENIERO EN MULTIMEDIA</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-c%C3%A1rdenas-5a6b3a377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/david_a_c_c?igsh=NDl2cnl3Mmk1ejUw"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola mucho gusto! Mi nombre es Andrés Cárdenas.</span> Estudiante de noveno semestre de Ingeniería Multimedia en la Universidad Militar Nueva Granada. A lo largo de mi formación he desarrollado una sólida base en áreas como diseño, programación y producción audiovisual, combinando creatividad con habilidades técnicas .</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Un poco de mi</h3>
+                    <ul>
+                        <li><strong>Correo:</strong> <span data-copy="davidtocaima@hotmail.com" title="Click para copiar">davidtocaima@hotmail.com</span></li>
+                        <li><strong>Celular:</strong> <span data-copy="3214915196" title="Click para copiar">3214915196</span></li>
+                        <li><strong>Residencia:</strong> Bógota D.C, Colombia</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Mis Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>EDICIÓN </span>
+                            <span>VIDEO.</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span> DIBUJO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>VIDEOJUEGOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="serviciosindividuales" class="curriculum">
+        <div class="contenido-seccion" id="skills">
+            <h2>MIS SERVICIOS</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Animacíon 2D y 3D</h3>
+                    <div class="item izq">
+                        <p>La animación 2D y 3D es un proceso mediante el cual se da vida a personajes, objetos o entornos a través de la creación de secuencias de imágenes en movimiento. Juan Pérez, por ejemplo, ha participado en proyectos de animación que combinan técnicas tanto en 2D como en 3D. Esto implica diversas etapas, como el storyboard, modelado 3D, animación, renderización y postproducción.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Escultura Digital</h4>
+                        <p>La escultura digital es el proceso de crear formas tridimensionales en un entorno virtual. En este caso, Juan Pérez utiliza herramientas como ZBrush y Maya para modelar sus esculturas. El proceso incluye diversas etapas, como conceptualización, modelado, detallado, texturización y renderización.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseño de Personajes</h4>
+                        <p>El diseño de personajes es un proceso creativo en el que se crean los protagonistas y personajes secundarios de una historia, videojuego, película o cualquier otro medio visual. En este caso, Juan Pérez ha trabajado en el diseño de personajes para videojuegos. El proceso incluye diversas etapas, como investigación, bocetos, diseño final, rigging, texturización y animación en algunos casos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Modelado 3D</h4>
+                        <p>El modelado 3D es el proceso de crear representaciones tridimensionales de objetos o personajes. Juan Pérez utiliza software como Blender y 3ds Max para crear modelos detallados y realistas. Este proceso incluye etapas como la creación de mallas, texturización y renderización.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Ilustraciones</h3>
+                    <div class="item der">
+                        <p>La ilustración es una de mis pasiones más grandes. Disfruto explorando diferentes estilos y técnicas, desde la ilustración digital hasta técnicas tradicionales como acuarela y lápiz. Crear imágenes que cuenten historias y despierten emociones es algo que me apasiona profundamente. Siempre estoy experimentando con nuevas herramientas y formas de expresión visual, buscando expandir mis habilidades y encontrar nuevas formas de contar historias a través del arte.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <h3>Investigación</h3>
+                    <div class="item der">
+                        <p>En el diseño gráfico, la innovación y la relevancia no son fruto del azar; son el resultado de un proceso consciente que combina investigación profunda y creación estratégica. Cada proyecto que he desarrollado refleja una búsqueda constante de entender no solo las necesidades funcionales de un encargo, sino también el contexto cultural, social y visual en el que se inscribe.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <h3>Dirección de Arte</h3>
+                    <div class="item der">
+                        <p>La dirección de arte es el arte de construir universos visuales que conecten con emociones y transmitan mensajes claros. Mi trabajo se centra en transformar ideas en experiencias visuales cohesionadas y memorables. Combino visión estratégica y narrativa visual, comenzando cada proyecto con una conceptualización que define los pilares creativos. Esto garantiza un lenguaje visual unificado, donde cada elemento refuerza el mensaje y eleva la identidad del proyecto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="portafolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>TRABAJOS</h2>
+            
+            <!-- Filtros de portfolio -->
+            <div class="filtros">
+                <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="ilustracion">Ilustración</button>
+                <button class="filtro-btn" data-filtro="video">Video</button>
+                <button class="filtro-btn" data-filtro="web">Web</button>
+            </div>
+
+            <div class="subseccion">
+                <h3>Ilustración</h3>
+                <div class="galeria">
+                    <div class="proyecto" data-categoria="ilustracion">
+                        <img src="ima1.jpeg" alt="Ilustración 1">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="ilustracion">
+                        <img src="ima2.jpeg" alt="Ilustración 2">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="ilustracion">
+                        <img src="ima3.jpeg" alt="Ilustración 3">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="ilustracion">
+                        <img src="ima4.jpeg" alt="Ilustración 4">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Ilustración</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="ilustracion">
+                        <img src="ima5.jpeg" alt="Ilustración 5">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Ilustración</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subseccion">
+                <h3>Videos</h3>
+                <div class="galeria">
+                    <div class="proyecto" data-categoria="video">
+                        <a href="https://youtube.com/shorts/_FY-yWJ0mnM" target="_blank">
+                            <img src="portachip.png" alt="CHICHA NACHO">
+                        </a>
+                        <div class="overlay">
+                            <h3>Video Promocional</h3>
+                            <p>Multimedia</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="video">
+                        <a href="https://youtu.be/pC99rUkny_s" target="_blank">
+                            <img src="posthuellas.png" alt="CHICHA">
+                        </a>
+                        <div class="overlay">
+                            <h3>Documental</h3>
+                            <p>Video</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="video">
+                        <video controls width="320" height="240">
+                            <source src="tra.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subseccion">
+                <h3>Dirección de Arte</h3>
+                <div class="galeria">
+                    <div class="proyecto" data-categoria="web">
+                        <img src="Pieza Publicitaria Chip_page-0001.jpg" alt="Dirección de Arte 1">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Dirección de Arte</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="web">
+                        <img src="CHICHA NACHO.png" alt="Dirección de Arte 2">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Dirección de Arte</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" data-categoria="web">
+                        <img src="CHICHA.png" alt="Dirección de Arte 3">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Dirección de Arte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subseccion">
+                <h3>Investigación</h3>
+                <div class="pdf-container">
+                    <div class="visor-pdf">
+                        <h4>La Chicha - Antonio Caro</h4>
+                        <iframe src="La Chicha - Antonio Caro.pdf" class="pdf-frame">
+                            Tu navegador no soporta la visualización de PDFs. 
+                            <a href="La Chicha - Antonio Caro.pdf">Descargar PDF</a>
+                        </iframe>
+                    </div>
+                    <div class="visor-pdf">
+                        <h4>Investigación Creativa</h4>
+                        <iframe src="Manual de Marca Dialogos Visuales.pdf" class="pdf-frame">
+                            Tu navegador no soporta la visualización de PDFs. 
+                            <a href="Manual de Marca Dialogos Visuales.pdf">Descargar PDF</a>
+                        </iframe>
+                    </div>
+                    <div class="visor-pdf">
+                        <h4>Diseño y Cultura</h4>
+                        <iframe src="Poster Cientifico - Investigación Pinos-comprimido.pdf" class="pdf-frame">
+                            Tu navegador no soporta la visualización de PDFs. 
+                            <a href="Poster Cientifico - Investigación Pinos-comprimido.pdf">Descargar PDF</a>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de progreso de lectura -->
+    <div id="progreso-lectura"></div>
+
+    <!-- Botón de tema -->
+    <button class="toggle-tema"><i class="fa-moon"></i></button>
+
+    <!-- Filtros de portfolio -->
+    <div class="filtros">
+        <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="web">Web</button>
+        <button class="filtro-btn" data-filtro="mobile">Mobile</button>
+    </div>
+
+    <!-- Elementos copiables -->
+    <span data-copy="email@ejemplo.com">email@ejemplo.com</span>
+
+    <!-- Contadores -->
+    <span class="contador" data-valor="50">0</span>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://linktr.ee/checho190"><i class="fa-solid fa-folder"></i></a>
+            <a href="https://www.instagram.com/sergi0.zp?igsh=bXE3MGplYnlzdG1x"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
